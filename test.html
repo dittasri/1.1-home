@@ -1,0 +1,23 @@
+<!-- Dropdown for sorting tasks by status -->
+<select id="sort_status" onchange="sortTasksByStatus()">
+  <option value="">Sort by Status</option>
+  <option value="todo">To Do</option>
+  <option value="inprogress">In Progress</option>
+  <option value="completed">Completed</option>
+</select>
+// Example of making an asynchronous request
+function fetchData() {
+  fetch('/api/data')
+  .then(response => response.json())
+  .then(data => {
+    // Handle the retrieved data
+  })
+  .catch(error => console.error('Error:', error));
+}
+/* Example of responsive design using media queries */
+@media only screen and (max-width: 600px) {
+  /* Styles for screens up to 600px width */
+  body {
+    font-size: 14px;
+  }
+}
